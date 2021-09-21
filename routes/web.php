@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::middleware('auth') //autenticazione
     ->namespace('Admin') //-> direttiva al path Admin/HomeController

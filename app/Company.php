@@ -13,7 +13,7 @@ class Company extends Model
         'vat_number'
     ];
 
-    protected $with = [ 'employee' ]; 
+    protected $with = [ 'users' ]; 
 
     //one to many-> side one
     public function employee() {

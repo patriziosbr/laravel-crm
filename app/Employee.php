@@ -14,6 +14,7 @@ class Employee extends Model
         'company_id',
     ];
 
+    protected $with=['compnaines'];
 
     //one to many->side many
     public function company() {

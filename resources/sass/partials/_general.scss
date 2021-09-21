@@ -1,0 +1,27 @@
+
+// Variables
+@import 'variables';
+
+.guest-card {
+    padding: 16px 32px;
+    border-radius: 5px;
+    i {
+        font-size: 40px;
+        color: $gray;
+        padding: 32px;
+        &:hover{
+            color: darken($color: $gray, $amount: 3);
+        }
+    }
+}
+
+
+.guest-card:hover {
+    i {
+        color: darken($color: $gray, $amount: 3);
+    }
+    .base-btn {
+        color: $black;
+        background-color: lighten($color: $gray, $amount: 2);
+    }
+}
